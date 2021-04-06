@@ -14,7 +14,7 @@ char string[1000];
 const char HEAD_REQUEST[] =
 {
 	"HEAD / HTTP/1.1\r\n" 			// Get root index from server
-	"Host:172.217.169.142"		// Specify host name used
+	"Host:"		// Specify host name used
 	"\r\n"							// End hostname header from part1
 	"User-agent: ereborlugimli\r\n" // Specify user agent
 	"Connection: close\r\n" 		// Close connection after response
