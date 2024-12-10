@@ -1,6 +1,6 @@
 # YARA Rules for Detecting MeltingClaw and ShadyHammock Malware
 
-This repository contains YARA rules designed to detect three specific malware families: **MeltingClaw**, **ShadyHammock**, and **QuickHeal**. The rules are based on unique file hashes and behavior patterns identified during analysis. The repository includes the YARA rules themselves and the corresponding output screenshots from testing the rules.
+This repository contains YARA rules designed to detect two specific malware families: **MeltingClaw** and **ShadyHammock**. The rules are based on unique file hashes and behavior patterns identified during analysis. The repository includes the YARA rules themselves and the corresponding output screenshots from testing the rules.
 
 ## Contents
 - `yara-rules/`: Contains the YARA rules for malware detection.
@@ -18,29 +18,19 @@ The following file hashes are associated with the ShadyHammock malware family:
 - `9f635fa106dbe7181b4162266379703b3fdf53408e5b8faa6aeee08f1965d3a2`
 - `1fa96e7f3c26743295a6af7917837c98c1d6ac0da30a804fed820daace6f90b0`
 
-### QuickHeal
-The following file hash is associated with the QuickHeal malware family:
-- `1906e7d5a745a364c91f5e230e16e1566721ace1183a57e8d25ff437664c7d02`
-
 ## How to Use
 1. Clone this repository:
    ```bash
    git clone https://github.com/CaptanMoss/LOL-Level-Stuff.git
-
 2. Navigate to the rules/ directory:
    ```bash
    cd LOL-Level-Stuff/yara-rules/
-
 3. Run the YARA rules against your target files:
    ```bash
    yara MeltingClaw.yara <target_file>
    yara ShadyHammock.yara <target_file>
-   yara QuickHeal.yara <target_file>
-
-
 ## Screenshots
 Screenshots demonstrating the detection outputs are included in the outputs/ directory.
-
 
 ## Contributing
 Feel free to open issues or pull requests if you find errors in the rules or want to contribute enhancements.
