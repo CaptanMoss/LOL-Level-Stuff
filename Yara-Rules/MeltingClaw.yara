@@ -44,6 +44,6 @@ rule MeltingClaw
         $win11 = "DnsQuery_A"
     
     condition:
-        uint16(0) == 0x5A4D and ($obfuscation_function and $custom_encryption_function and $shifting_function and $execute_function) and ((($trem1 and $trem3) or ($state1 and $state3)) and (2 of ($reg * ))) and (($post and (all of ($win * ))))
+        uint16(0) == 0x5A4D and ($obfuscation_function and $custom_encryption_function and $shifting_function and $execute_function) and ((($trem1 and $trem3) or ($state1 and $state3)) and ( 2 of ($reg*))) and (($post and (all of ($win*))))
 
 }

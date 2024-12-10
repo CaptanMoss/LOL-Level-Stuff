@@ -33,6 +33,6 @@ rule ShadyHammock
         $adv4 = "RegQueryValueExW" ascii
         $ip = "127.0.0.1" ascii
     condition:
-        uint16(0) == 0x5A4D and (($shifting_function and $obfuscation_function) or $custom_encryption_function) and (2 of ($ws * ) and all of ($adv * )) and $ip
+        uint16(0) == 0x5A4D and (($shifting_function and $obfuscation_function) or $custom_encryption_function) and (2 of ($ws*) and all of ($adv*)) and $ip
 
 }

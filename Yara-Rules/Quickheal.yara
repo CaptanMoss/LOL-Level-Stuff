@@ -21,6 +21,6 @@ rule Quickheal
         $str = "GetOfficeDatatal" ascii
     
     condition:
-        uint16(0) == 0x5A4D and $str and 7 of ($api * )
+        uint16(0) == 0x5A4D and $str and 7 of ($api*)
 
 }
